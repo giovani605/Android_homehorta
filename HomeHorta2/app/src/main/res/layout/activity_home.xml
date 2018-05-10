@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.giovaniboss.homehorta.Home">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="424dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:id="@+id/gride"
+            android:layout_width="350dp"
+            android:layout_height="338dp"
+            android:isScrollContainer="false"
+            android:orientation="vertical"
+            android:weightSum="1"
+            tools:layout_editor_absoluteX="6dp"
+            tools:layout_editor_absoluteY="7dp">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/grade_botoes_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintDimensionRatio=""
+            tools:layout_editor_absoluteX="10dp"
+            tools:layout_editor_absoluteY="431dp">
+
+            <Button
+                android:id="@+id/BotaoGuia"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="88dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="0.01"
+                android:background="@android:color/holo_blue_bright"
+                android:onClick="crair_tela_buscar"
+                android:text="Buscar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:layout_editor_absoluteX="280dp" />
+
+            <Button
+                android:id="@+id/botao_add"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="88dp"
+                android:layout_height="48dp"
+                android:layout_weight="0.02"
+                android:background="@android:color/holo_blue_bright"
+                android:onClick="add_planta_tela"
+                android:text="+"
+                app:layout_constraintBottom_toBottomOf="@+id/gride"
+                tools:layout_editor_absoluteX="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
